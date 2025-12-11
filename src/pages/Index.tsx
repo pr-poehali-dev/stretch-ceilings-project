@@ -404,7 +404,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} />
-                  <span>Челябинск, ул. Кирова, 104</span>
+                  <span>Челябинск, ул. Кирова, 1А</span>
                 </div>
               </div>
             </div>
