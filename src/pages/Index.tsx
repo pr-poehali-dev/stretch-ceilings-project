@@ -131,7 +131,7 @@ const Index = () => {
               <span className="text-primary">для вашего дома</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Качественная установка натяжных потолков за 1 день. Гарантия 10 лет. Бесплатный замер по Москве и области.
+              Качественная установка натяжных потолков за 1 день. Гарантия 10 лет. Бесплатный замер по Челябинску и области.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-base">
@@ -396,7 +396,7 @@ const Index = () => {
               <div className="space-y-2 text-sm opacity-80">
                 <div className="flex items-center gap-2">
                   <Icon name="Phone" size={16} />
-                  <span>+7 (495) 123-45-67</span>
+                  <span>+7 (351) 123-45-67</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Mail" size={16} />
@@ -404,7 +404,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} />
-                  <span>Москва, ул. Примерная, 1</span>
+                  <span>Челябинск, ул. Кирова, 104</span>
                 </div>
               </div>
             </div>
