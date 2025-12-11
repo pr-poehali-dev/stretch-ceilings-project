@@ -85,7 +85,7 @@ const Index = () => {
     { icon: 'Ruler', title: 'Замер', description: 'Бесплатный выезд специалиста' },
     { icon: 'Palette', title: 'Дизайн', description: 'Подбор цвета и текстуры' },
     { icon: 'Settings', title: 'Монтаж', description: 'Установка за 4-6 часов' },
-    { icon: 'Shield', title: 'Гарантия', description: '10 лет на материал и работу' },
+    { icon: 'Shield', title: 'Гарантия', description: '10 лет на материал, 1 год на монтаж' },
   ];
 
   return (
@@ -131,7 +131,7 @@ const Index = () => {
               <span className="text-primary">для вашего дома</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Качественная установка натяжных потолков за 1 день. Гарантия 10 лет. Бесплатный замер по Челябинску и области.
+              Качественная установка натяжных потолков за 1 день. Гарантия 10 лет на материал и 1 год на монтаж. Бесплатный замер по Челябинску и области.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-base">
