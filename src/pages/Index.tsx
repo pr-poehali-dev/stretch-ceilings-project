@@ -107,6 +107,9 @@ const Index = () => {
               <a href="#services" className="text-sm hover:text-primary transition-colors">
                 Услуги
               </a>
+              <a href="#reviews" className="text-sm hover:text-primary transition-colors">
+                Отзывы
+              </a>
               <a href="#contact" className="text-sm hover:text-primary transition-colors">
                 Контакты
               </a>
@@ -299,7 +302,57 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20">
+      <section id="reviews" className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Отзывы клиентов</h2>
+            <p className="text-muted-foreground">Более 500 довольных клиентов за последний год</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              {
+                name: 'Анна Петрова',
+                rating: 5,
+                text: 'Установили потолки в квартире за 5 часов! Очень чисто работали, все убрали за собой. Результат превзошёл ожидания.',
+                date: 'Ноябрь 2024',
+              },
+              {
+                name: 'Сергей Иванов',
+                rating: 5,
+                text: 'Сделали потолки в офисе 65 кв.м. Профессиональная команда, точно в срок. Рекомендую!',
+                date: 'Октябрь 2024',
+              },
+              {
+                name: 'Мария Соколова',
+                rating: 5,
+                text: 'Замечательный результат! Глянцевый потолок визуально увеличил комнату. Спасибо за качественную работу!',
+                date: 'Декабрь 2024',
+              },
+            ].map((review, index) => (
+              <Card
+                key={index}
+                className="animate-scale-in hover:shadow-lg transition-shadow"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CardHeader>
+                  <div className="flex items-center gap-2 mb-2">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <CardTitle className="text-lg">{review.name}</CardTitle>
+                  <CardDescription className="text-xs">{review.date}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{review.text}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <Card className="animate-scale-in">
